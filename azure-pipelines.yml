@@ -136,7 +136,7 @@ stages:
               slotName: 'swap'
               appName: '$(WebAppNameStaging)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
-          - task: AzureAppServiceManager@0
+          - task: AzureAppServiceManage@0
             displayName: 'Swap deployment slots'
             inputs:
               azureSubscription: 'Resource Manager - Tailspin - Space Game'
